@@ -61,7 +61,8 @@
 		],
 		"parameters": {
 			"db_name": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "Practice_db"
 			}
 		},
 		"annotations": [],
