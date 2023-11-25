@@ -205,7 +205,10 @@
 						"userProperties": [],
 						"linkedServiceName": {
 							"referenceName": "ls_AzureSqlDatabase1",
-							"type": "LinkedServiceReference"
+							"type": "LinkedServiceReference",
+							"parameters": {
+								"dbname": "Practice_db"
+							}
 						},
 						"typeProperties": {
 							"scripts": [
