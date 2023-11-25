@@ -1,0 +1,25 @@
+{
+	"name": "CDC_dataflow",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ds_inputazuresqldb",
+						"type": "DatasetReference"
+					},
+					"name": "citizenstudent"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     isolationLevel: 'READ_UNCOMMITTED',",
+				"     format: 'table') ~> citizenstudent"
+			]
+		}
+	}
+}

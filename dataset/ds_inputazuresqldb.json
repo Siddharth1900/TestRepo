@@ -1,0 +1,19 @@
+{
+	"name": "ds_inputazuresqldb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AzureSqlDatabase1",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"dbname": "Practice_db"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "citizen_stud"
+		}
+	}
+}

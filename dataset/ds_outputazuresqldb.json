@@ -1,0 +1,19 @@
+{
+	"name": "ds_outputazuresqldb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AzureSqlDatabase1",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"dbname": "practice2_db"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "student",
+			"table": "citizen_stud"
+		}
+	}
+}
