@@ -37,7 +37,13 @@
 				"userProperties": [],
 				"linkedServiceName": {
 					"referenceName": "ls_AzureSqlDatabase1",
-					"type": "LinkedServiceReference"
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"dbname": {
+							"value": "@pipeline().parameters.db_name",
+							"type": "Expression"
+						}
+					}
 				},
 				"typeProperties": {
 					"scripts": [
@@ -53,6 +59,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"db_name": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2023-11-25T15:19:23Z"
 	},
