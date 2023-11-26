@@ -380,19 +380,6 @@
 									}
 								},
 								{
-									"name": "EmpID",
-									"type": "Direct",
-									"functionName": "",
-									"attributeReference": {
-										"name": "EmpID",
-										"entity": "input26nov",
-										"entityConnectionReference": {
-											"connectionName": "ls_input1",
-											"type": "linkedservicetype"
-										}
-									}
-								},
-								{
 									"name": "EmpName",
 									"type": "Derived",
 									"functionName": "",
