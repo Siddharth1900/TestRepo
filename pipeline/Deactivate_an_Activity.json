@@ -108,8 +108,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001",
-					"method": "POST",
+					"url": "https://dummy.restapiexample.com/api/v1/employees",
+					"method": "GET",
 					"body": {
 						"#": "1100",
 						"first": "Razi",
