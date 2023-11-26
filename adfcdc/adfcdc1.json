@@ -7,7 +7,48 @@
 					{
 						"name": "input26nov",
 						"properties": {
-							"schema": [],
+							"schema": [
+								{
+									"name": "EmpID",
+									"dataType": "string"
+								},
+								{
+									"name": "EmpName",
+									"dataType": "string"
+								},
+								{
+									"name": "DeptID",
+									"dataType": "string"
+								},
+								{
+									"name": "Salary",
+									"dataType": "string"
+								},
+								{
+									"name": "Bonus",
+									"dataType": "string"
+								},
+								{
+									"name": "Gender",
+									"dataType": "string"
+								},
+								{
+									"name": "Country",
+									"dataType": "string"
+								},
+								{
+									"name": "City",
+									"dataType": "string"
+								},
+								{
+									"name": "DOJ",
+									"dataType": "string"
+								},
+								{
+									"name": "Company",
+									"dataType": "string"
+								}
+							],
 							"dslConnectorProperties": [
 								{
 									"name": "container",
@@ -260,7 +301,138 @@
 							"type": "linkedservicetype"
 						},
 						"attributeMappingInfo": {
-							"attributeMappings": []
+							"attributeMappings": [
+								{
+									"name": "Bonus",
+									"type": "Direct",
+									"functionName": "",
+									"attributeReference": {
+										"name": "Bonus",
+										"entity": "input26nov",
+										"entityConnectionReference": {
+											"connectionName": "ls_input1",
+											"type": "linkedservicetype"
+										}
+									}
+								},
+								{
+									"name": "City",
+									"type": "Direct",
+									"functionName": "",
+									"attributeReference": {
+										"name": "City",
+										"entity": "input26nov",
+										"entityConnectionReference": {
+											"connectionName": "ls_input1",
+											"type": "linkedservicetype"
+										}
+									}
+								},
+								{
+									"name": "Company",
+									"type": "Direct",
+									"functionName": "",
+									"attributeReference": {
+										"name": "Company",
+										"entity": "input26nov",
+										"entityConnectionReference": {
+											"connectionName": "ls_input1",
+											"type": "linkedservicetype"
+										}
+									}
+								},
+								{
+									"name": "Country",
+									"type": "Direct",
+									"functionName": "",
+									"attributeReference": {
+										"name": "Country",
+										"entity": "input26nov",
+										"entityConnectionReference": {
+											"connectionName": "ls_input1",
+											"type": "linkedservicetype"
+										}
+									}
+								},
+								{
+									"name": "DeptID",
+									"type": "Direct",
+									"functionName": "",
+									"attributeReference": {
+										"name": "DeptID",
+										"entity": "input26nov",
+										"entityConnectionReference": {
+											"connectionName": "ls_input1",
+											"type": "linkedservicetype"
+										}
+									}
+								},
+								{
+									"name": "DOJ",
+									"type": "Direct",
+									"functionName": "",
+									"attributeReference": {
+										"name": "DOJ",
+										"entity": "input26nov",
+										"entityConnectionReference": {
+											"connectionName": "ls_input1",
+											"type": "linkedservicetype"
+										}
+									}
+								},
+								{
+									"name": "EmpID",
+									"type": "Direct",
+									"functionName": "",
+									"attributeReference": {
+										"name": "EmpID",
+										"entity": "input26nov",
+										"entityConnectionReference": {
+											"connectionName": "ls_input1",
+											"type": "linkedservicetype"
+										}
+									}
+								},
+								{
+									"name": "EmpName",
+									"type": "Direct",
+									"functionName": "",
+									"attributeReference": {
+										"name": "EmpName",
+										"entity": "input26nov",
+										"entityConnectionReference": {
+											"connectionName": "ls_input1",
+											"type": "linkedservicetype"
+										}
+									}
+								},
+								{
+									"name": "Gender",
+									"type": "Direct",
+									"functionName": "",
+									"attributeReference": {
+										"name": "Gender",
+										"entity": "input26nov",
+										"entityConnectionReference": {
+											"connectionName": "ls_input1",
+											"type": "linkedservicetype"
+										}
+									}
+								},
+								{
+									"name": "Salary",
+									"type": "Direct",
+									"functionName": "",
+									"attributeReference": {
+										"name": "Salary",
+										"entity": "input26nov",
+										"entityConnectionReference": {
+											"connectionName": "ls_input1",
+											"type": "linkedservicetype"
+										}
+									}
+								}
+							]
 						}
 					}
 				],
