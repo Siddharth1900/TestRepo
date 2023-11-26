@@ -108,12 +108,16 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://dummy.restapiexample.com/api/v1/create",
+					"url": "https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001",
 					"method": "POST",
 					"body": {
-						"name": "adftestssp",
-						"salary": "456",
-						"age": "89"
+						"#": "1100",
+						"first": "Razi",
+						"last": "Rad",
+						"Email": "razi@abc.com",
+						"Age": "59",
+						"ContactNumber": "9867564321",
+						"DOB": "12/12/1964"
 					}
 				}
 			}
