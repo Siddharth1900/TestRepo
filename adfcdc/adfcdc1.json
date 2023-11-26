@@ -317,42 +317,51 @@
 								},
 								{
 									"name": "City",
-									"type": "Direct",
-									"functionName": "",
-									"attributeReference": {
-										"name": "City",
-										"entity": "input26nov",
-										"entityConnectionReference": {
-											"connectionName": "ls_input1",
-											"type": "linkedservicetype"
+									"type": "Derived",
+									"functionName": "upper",
+									"expression": "upper(City)",
+									"attributeReferences": [
+										{
+											"name": "City",
+											"entity": "input26nov",
+											"entityConnectionReference": {
+												"connectionName": "ls_input1",
+												"type": "linkedservicetype"
+											}
 										}
-									}
+									]
 								},
 								{
 									"name": "Company",
-									"type": "Direct",
-									"functionName": "",
-									"attributeReference": {
-										"name": "Company",
-										"entity": "input26nov",
-										"entityConnectionReference": {
-											"connectionName": "ls_input1",
-											"type": "linkedservicetype"
+									"type": "Derived",
+									"functionName": "trim",
+									"expression": "trim(Company)",
+									"attributeReferences": [
+										{
+											"name": "Company",
+											"entity": "input26nov",
+											"entityConnectionReference": {
+												"connectionName": "ls_input1",
+												"type": "linkedservicetype"
+											}
 										}
-									}
+									]
 								},
 								{
 									"name": "Country",
-									"type": "Direct",
-									"functionName": "",
-									"attributeReference": {
-										"name": "Country",
-										"entity": "input26nov",
-										"entityConnectionReference": {
-											"connectionName": "ls_input1",
-											"type": "linkedservicetype"
+									"type": "Derived",
+									"functionName": "upper",
+									"expression": "upper(Country)",
+									"attributeReferences": [
+										{
+											"name": "Country",
+											"entity": "input26nov",
+											"entityConnectionReference": {
+												"connectionName": "ls_input1",
+												"type": "linkedservicetype"
+											}
 										}
-									}
+									]
 								},
 								{
 									"name": "DeptID",
@@ -395,29 +404,35 @@
 								},
 								{
 									"name": "EmpName",
-									"type": "Direct",
-									"functionName": "",
-									"attributeReference": {
-										"name": "EmpName",
-										"entity": "input26nov",
-										"entityConnectionReference": {
-											"connectionName": "ls_input1",
-											"type": "linkedservicetype"
+									"type": "Derived",
+									"functionName": "upper",
+									"expression": "upper(EmpName)",
+									"attributeReferences": [
+										{
+											"name": "EmpName",
+											"entity": "input26nov",
+											"entityConnectionReference": {
+												"connectionName": "ls_input1",
+												"type": "linkedservicetype"
+											}
 										}
-									}
+									]
 								},
 								{
 									"name": "Gender",
-									"type": "Direct",
+									"type": "Derived",
 									"functionName": "",
-									"attributeReference": {
-										"name": "Gender",
-										"entity": "input26nov",
-										"entityConnectionReference": {
-											"connectionName": "ls_input1",
-											"type": "linkedservicetype"
+									"expression": "Gender",
+									"attributeReferences": [
+										{
+											"name": "Gender",
+											"entity": "input26nov",
+											"entityConnectionReference": {
+												"connectionName": "ls_input1",
+												"type": "linkedservicetype"
+											}
 										}
-									}
+									]
 								},
 								{
 									"name": "Salary",
