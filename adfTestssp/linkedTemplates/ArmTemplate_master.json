@@ -19,6 +19,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_outputadlsgen2'"
 		},
+		"ls_input1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_input1'"
+		},
 		"ls_input_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://sspadls2410.dfs.core.windows.net/"
@@ -26,6 +30,10 @@
 		"ls_outputadlsgen2_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://sspadls2510.dfs.core.windows.net/"
+		},
+		"ls_input1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sspadls2410.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -63,11 +71,17 @@
 					"ls_outputadlsgen2_accountKey": {
 						"value": "[parameters('ls_outputadlsgen2_accountKey')]"
 					},
+					"ls_input1_accountKey": {
+						"value": "[parameters('ls_input1_accountKey')]"
+					},
 					"ls_input_properties_typeProperties_url": {
 						"value": "[parameters('ls_input_properties_typeProperties_url')]"
 					},
 					"ls_outputadlsgen2_properties_typeProperties_url": {
 						"value": "[parameters('ls_outputadlsgen2_properties_typeProperties_url')]"
+					},
+					"ls_input1_properties_typeProperties_url": {
+						"value": "[parameters('ls_input1_properties_typeProperties_url')]"
 					}
 				}
 			},

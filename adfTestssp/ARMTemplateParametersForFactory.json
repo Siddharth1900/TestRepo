@@ -14,11 +14,17 @@
 		"ls_outputadlsgen2_accountKey": {
 			"value": ""
 		},
+		"ls_input1_accountKey": {
+			"value": ""
+		},
 		"ls_input_properties_typeProperties_url": {
 			"value": "https://sspadls2410.dfs.core.windows.net/"
 		},
 		"ls_outputadlsgen2_properties_typeProperties_url": {
 			"value": "https://sspadls2510.dfs.core.windows.net/"
+		},
+		"ls_input1_properties_typeProperties_url": {
+			"value": "https://sspadls2410.dfs.core.windows.net/"
 		}
 	}
 }
