@@ -1,0 +1,22 @@
+{
+	"name": "cdc_dataflow",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "emp"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     inferDriftedColumnTypes: true,",
+				"     enableNativeCdc: true,",
+				"     netChanges: true) ~> emp"
+			]
+		}
+	}
+}

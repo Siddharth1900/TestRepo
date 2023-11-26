@@ -1,0 +1,39 @@
+{
+	"name": "ds_SqlServerdb_output",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_SqlServerdb_output",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "stud_name",
+				"type": "varchar"
+			},
+			{
+				"name": "stud_loc",
+				"type": "varchar"
+			},
+			{
+				"name": "sal",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "company",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "student",
+			"table": "citizen_stud"
+		}
+	}
+}

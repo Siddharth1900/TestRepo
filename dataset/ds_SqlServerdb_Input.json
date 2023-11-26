@@ -1,0 +1,39 @@
+{
+	"name": "ds_SqlServerdb_Input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_SqlServerdb_input",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "stud_name",
+				"type": "varchar"
+			},
+			{
+				"name": "stud_loc",
+				"type": "varchar"
+			},
+			{
+				"name": "sal",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "company",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "citizen_stud"
+		}
+	}
+}
