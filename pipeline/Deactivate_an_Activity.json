@@ -83,8 +83,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://reqres.in/",
-					"method": "POST",
+					"url": "https://dummy.restapiexample.com/api/v1/employee/1",
+					"method": "GET",
 					"body": "Success"
 				}
 			},
@@ -108,9 +108,13 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://reqres.in/",
+					"url": "https://dummy.restapiexample.com/api/v1/create",
 					"method": "POST",
-					"body": "Failed"
+					"body": {
+						"name": "adftestssp",
+						"salary": "456",
+						"age": "89"
+					}
 				}
 			}
 		],
