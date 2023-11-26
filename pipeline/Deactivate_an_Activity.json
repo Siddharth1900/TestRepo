@@ -81,7 +81,12 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://reqres.in/",
+					"method": "POST",
+					"body": "Success"
+				}
 			},
 			{
 				"name": "FailedMail",
@@ -101,7 +106,12 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://reqres.in/",
+					"method": "POST",
+					"body": "Failed"
+				}
 			}
 		],
 		"annotations": []
