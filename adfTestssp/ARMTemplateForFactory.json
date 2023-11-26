@@ -702,6 +702,22 @@
 										{
 											"name": "inferDriftedColumnTypes",
 											"value": false
+										},
+										{
+											"name": "deletable",
+											"value": false
+										},
+										{
+											"name": "updateable",
+											"value": false
+										},
+										{
+											"name": "upsertable",
+											"value": false
+										},
+										{
+											"name": "defaultToUpsert",
+											"value": false
 										}
 									]
 								}
@@ -757,23 +773,10 @@
 								"attributeMappingInfo": {
 									"attributeMappings": [
 										{
-											"name": "Bonus",
-											"type": "Direct",
-											"functionName": "",
-											"attributeReference": {
-												"name": "Bonus",
-												"entity": "input26nov",
-												"entityConnectionReference": {
-													"connectionName": "ls_input1",
-													"type": "linkedservicetype"
-												}
-											}
-										},
-										{
 											"name": "City",
 											"type": "Derived",
-											"functionName": "upper",
-											"expression": "upper(City)",
+											"functionName": "lower",
+											"expression": "lower(City)",
 											"attributeReferences": [
 												{
 													"name": "City",
@@ -818,19 +821,6 @@
 											]
 										},
 										{
-											"name": "DeptID",
-											"type": "Direct",
-											"functionName": "",
-											"attributeReference": {
-												"name": "DeptID",
-												"entity": "input26nov",
-												"entityConnectionReference": {
-													"connectionName": "ls_input1",
-													"type": "linkedservicetype"
-												}
-											}
-										},
-										{
 											"name": "DOJ",
 											"type": "Direct",
 											"functionName": "",
@@ -844,42 +834,13 @@
 											}
 										},
 										{
-											"name": "EmpID",
-											"type": "Direct",
-											"functionName": "",
-											"attributeReference": {
-												"name": "EmpID",
-												"entity": "input26nov",
-												"entityConnectionReference": {
-													"connectionName": "ls_input1",
-													"type": "linkedservicetype"
-												}
-											}
-										},
-										{
 											"name": "EmpName",
 											"type": "Derived",
-											"functionName": "upper",
-											"expression": "upper(EmpName)",
+											"functionName": "",
+											"expression": "EmpName",
 											"attributeReferences": [
 												{
 													"name": "EmpName",
-													"entity": "input26nov",
-													"entityConnectionReference": {
-														"connectionName": "ls_input1",
-														"type": "linkedservicetype"
-													}
-												}
-											]
-										},
-										{
-											"name": "Gender",
-											"type": "Derived",
-											"functionName": "",
-											"expression": "Gender",
-											"attributeReferences": [
-												{
-													"name": "Gender",
 													"entity": "input26nov",
 													"entityConnectionReference": {
 														"connectionName": "ls_input1",
@@ -915,6 +876,7 @@
 					},
 					"mode": "Microbatch"
 				},
+				"status": "Stopped",
 				"allowVNetOverride": false
 			},
 			"dependsOn": [
